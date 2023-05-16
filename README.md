@@ -69,17 +69,19 @@ Here's how we can write the equivalent statement in Python:
 ```py
 # Python
 dog = "cuddly"
+def my_dog(dog):
+    if dog == "hungry":
+        owner = "Refilling food bowl."
+    elif dog == "thirsty":
+        owner = "Refilling water bowl."
+    elif dog == "playful":
+        owner = "Playing tug-of-war."
+    elif dog == "cuddly":
+        owner = "Snuggling."
+    else:
+        owner = "Reading newspaper."
 
-if dog == "hungry":
-    owner = "Refilling food bowl."
-elif dog == "thirsty":
-    owner = "Refilling water bowl."
-elif dog == "playful":
-    owner = "Playing tug-of-war."
-elif dog == "cuddly":
-    owner = "Snuggling."
-else:
-    owner = "Reading newspaper."
+        
 ```
 
 Notice that the `owner` variable here was not defined above like it would be in
